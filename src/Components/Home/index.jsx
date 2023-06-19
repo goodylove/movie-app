@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "./../Slider/index";
 import imgS from "/Rectangle 201.png";
-import { useState, useRef, useContext } from "react";
+import { useState, useRef, useContext, useEffect } from "react";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { ContextHolder } from "../Context";
@@ -34,20 +34,6 @@ export default function Home() {
   } = useContext(ContextHolder);
   const [removeSearchList, setRemoveSearchList] = useState(searchResult);
 
-  //   useEffect(() => {
-  //     const handleBubbling = (e) => {
-  //       if (myRef.current && !myRef.current.contains(e.target)) {
-  //         setRemoveSearchList(!removeSearchList);
-  //         setSearchInput(!searchInput);
-  //         setIsFound(false);
-  //       }
-  //     };
-  //     document.body.addEventListener("click", handleBubbling);
-
-  //     return () => {
-  //       document.body.removeEventListener("click", handleBubbling);
-  //     };
-  //   }, [removeSearchList, isFound, search, searchResult]);
   return (
     <>
       <section
@@ -80,7 +66,7 @@ export default function Home() {
             {upDateMovies && (
               <>
                 {upDateMovies.length > 0 ? (
-                  <div className="    grid-cols-2 grid lg:grid-cols-4  md:grid-cols-3  w-full sm:grid-cols-2 md:gap-9 justify-items-center">
+                  <div className="    grid-cols-2 grid xl:grid-cols-3  xl:gap-9 lg:gap-10  gap-5 md:grid-cols-3  w-full sm:grid-cols-2 md:gap-9 justify-items-center">
                     {upDateMovies?.map((movie, index) => {
                       return <MovieCard key={index} data={movie} />;
                     })}

@@ -92,3 +92,19 @@
   opacity: 0.6;
 }
 /* search ends here */
+.not-found {
+  display: flex;
+  justify-content: center;
+  background: white;
+  position: absolute;
+  right: 90px;
+  top: 53px;
+  inset: 0px 0px auto auto;
+  margin-top: 3.3rem;
+  padding: 10px;
+  margin-right: 3.6rem;
+}
+
+.search {
+  inset: 0px 0px auto auto;
+}

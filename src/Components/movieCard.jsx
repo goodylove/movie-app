@@ -27,8 +27,8 @@ function MovieCard({ data }) {
       ) : (
         <div className="">
           <div className="cursor-pointer   h-auto  ">
-            <div className="relative  h-auto w-[150px]  md:w-[250px] rounded shadow-lg ">
-              <div className="max-w-[400px] h-[200px]">
+            <div className="relative  h-auto w-[140px]  md:w-[250px] rounded shadow-lg ">
+              <div className="max-w-[390px] h-[200px]">
                 <img src={img} alt="" className=" rounded-t h-full w-full" />
               </div>
               <div onClick={handleFavoriteIcon}>
@@ -77,9 +77,9 @@ function MovieCard({ data }) {
                     className="fixed top-[8px] right-[8px] text-white"
                     onClick={() => setOpenModal(false)}
                   />
-                  <div className="flex flex-col items-start text-white p-[1rem]">
-                    <p className="text-[13px] mt-[10px]">Name:{title}</p>
-                    <p className="text-[13px] mt-[10px]">
+                  <div className="flex flex-col items-start text-white ">
+                    <p className="text-[10px] mt-[10px]">Name:{title}</p>
+                    <p className="text-[10px] mt-[10px]">
                       Year of relase: {release_date}
                     </p>
                     <p className="text-[10px] mt-[10px] text-start">
