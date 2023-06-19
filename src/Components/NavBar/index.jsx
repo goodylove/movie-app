@@ -47,7 +47,7 @@ export default function Nav() {
           </div>
           {/* onclick on search icon show search input */}
           {searchInput && (
-            <div className="absolute top-2 right-12   w-[250px] jump">
+            <div className="absolute top-2 right-12   md:w-[250px] w-[199px] jump">
               <input
                 type="search"
                 placeholder="Search any move"
