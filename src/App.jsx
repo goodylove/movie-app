@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   return (
     <ContextProvider>
-      <div className="bg-black h-[100vh] w-full">
+      <div className="h-[100vh] w-full">
         <Nav />
         <Home />
       </div>

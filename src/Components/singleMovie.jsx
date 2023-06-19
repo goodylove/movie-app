@@ -18,8 +18,8 @@ function SingleMovieCard({ data }) {
       ) : (
         <div className="">
           <div className="cursor-pointer   h-auto  ">
-            <div className="relative  h-auto  max-w-[250px] rounded shadow-lg  mt-[3rem]">
-              <div className="max-w-[400px] h-[200px]">
+            <div className="relative  h-auto  max-w-[250px]  shadow-lg  mt-[3rem]  border-[1px] border-white rounded  ">
+              <div className="max-w-[400px] h-[200px]  border-[1px] border-white rounded">
                 <img src={img} alt="" className=" rounded-t h-full w-full" />
               </div>
 

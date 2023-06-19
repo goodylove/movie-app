@@ -47,11 +47,11 @@ export default function Nav() {
           </div>
           {/* onclick on search icon show search input */}
           {searchInput && (
-            <div className="absolute top-2 right-12    jump">
+            <div className="absolute top-2 right-12   w-[250px] jump">
               <input
                 type="search"
                 placeholder="Search any move"
-                className="p-2  search  rounded-md border-none  outline-0 w-full "
+                className="p-[10px]  search  rounded-md border-none  outline-0 w-full "
                 onChange={(e) => handleSearchValue(e)}
                 onClick={(e) => e.stopPropagation()}
               />

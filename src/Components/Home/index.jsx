@@ -19,31 +19,34 @@ export default function Home() {
     upDateMovies,
     loading,
     error,
-    isFound,
-    search,
-    upDateMovieState,
-    searchResult,
-    setSearch,
-    setIsFound,
-    currentPage,
+
     postLimit,
     movies,
     updateCurrentPage,
-
-    handleSearchValue,
   } = useContext(ContextHolder);
-  const [removeSearchList, setRemoveSearchList] = useState(searchResult);
-
+  // home section
   return (
     <>
       <section
-        className={`w-full  home  justify-center  flex relative items-center mt-[3rem] lg:mt-[3rem] overflow-y-scroll   ${
+        className="w-full  opacity-[0.3
+      9]"
+      >
+        <div className="relative">
+          <img
+            src="https://image.tmdb.org/t/p/w500//qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+            alt=""
+            className="w-full h-[400px]  lg:h-[500px]   object-cover"
+          />
+        </div>
+      </section>
+      <section
+        className={`w-full mt-0  home   justify-center  flex relative items-center  lg:mt-[0.1rem] overflow-y-scroll  bg-black  ${
           error
-            ? "h-[430px] lg:h-[597px] md:h-[890px]"
-            : "h-[100%]  lg:h-[570px]"
+          // ? "h-[430px] lg:h-[597px] md:h-[890px]"
+          // : "h-[100%]  lg:h-[570px]"
         }`}
       >
-        <section className="w-[80%]">
+        <section className="w-[100%]">
           {/* upDateMovies list section  */}
           <div className="text-white text-center text-[20px] font-[500] mt-[30px]">
             {loading && <h3>Loading....</h3>}
@@ -66,7 +69,7 @@ export default function Home() {
             {upDateMovies && (
               <>
                 {upDateMovies.length > 0 ? (
-                  <div className="    grid-cols-2 grid xl:grid-cols-3  xl:gap-9 lg:gap-10  gap-5 md:grid-cols-3  w-full sm:grid-cols-2 md:gap-9 justify-items-center">
+                  <div className="    grid-cols-2 grid xl:grid-cols-3  xl:gap-9 lg:gap-10  gap-5 md:grid-cols-3  w-full sm:grid-cols-3 md:gap-9 justify-items-center">
                     {upDateMovies?.map((movie, index) => {
                       return <MovieCard key={index} data={movie} />;
                     })}
