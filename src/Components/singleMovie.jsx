@@ -4,6 +4,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const API_IMG = "https://image.tmdb.org/t/p/w500/";
 
+// this component is for single movie when searched
 function SingleMovieCard({ data }) {
   const [openModal, setOpenModal] = useState(false);
 
